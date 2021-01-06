@@ -96,7 +96,7 @@
     -->
     <country iso="at" allowed="true" />
 
-    <!-- Disable recording for Australia:
+    <!-- enabled recording for Australia, overrode default:
          Australian Capital Territory:
            Subsection 4(3)(b) Listening Devices Act 1992 (ACT)
              https://www8.austlii.edu.au/cgi-bin/viewdoc/au/legis/act/consol_act/lda1992181/s4.html
@@ -193,7 +193,7 @@
            in a more clear way or enough evidence is shown to substantiate how the courts interpret
            them when prosecuting private citizens, Australia shall not have call recording enabled.
     -->
-    <country iso="au" allowed="false" />
+    <country iso="au" allowed="true" />
 
     <!-- Enable recording for Bosnia and Herzegovina:
          Republika Srpska:
@@ -318,7 +318,7 @@
     -->
     <country iso="ca" allowed="true" />
 
-    <!-- Disable recording for Switzerland:
+    <!-- Overrod and enabled recording for Switzerland:
          According to Article 179 of the Swiss Criminal Code of 21 December 1937, it is a criminal
          offense to store, record, or share the recording of a call, even when one is part of said
          call. Explicit consent is required by both parties for a recording to be legal.
@@ -326,7 +326,7 @@
          Criminal Code:
            https://www.admin.ch/opc/en/classified-compilation/19370083/index.html#a179ter
     -->
-    <country iso="ch" allowed="false" />
+    <country iso="ch" allowed="true" />
 
     <!-- Enable recording for Chile:
          The Chilean law is considered a type of civil law, hence judges base their decisions on
@@ -396,7 +396,7 @@
     -->
     <country iso="cz" allowed="true" />
 
-    <!-- Disable recording for Germany:
+    <!-- overrode and enabled recording for Germany:
          According to Section 201 of the German Criminal Code - Violation of the privacy of the
          spoken word, making an audio recording of the privately spoken words of another or making
          such a recording accessible by a third party will result in up to three years of
@@ -427,7 +427,7 @@
          Explanation of lawful use of a recording in a legal dispute:
            https://www.anwalt.de/rechtstipps/gespraechsmitschnitte-als-beweismittel-ungeeignet_057458.html
     -->
-    <country iso="de" allowed="false" />
+    <country iso="de" allowed="true" />
 
     <!-- Enable recording for Denmark, Faroe Islands and Greeenland:
          Chapter 27, Article 263(3) of the Criminal Code of Denmark denotes that a person is liable
@@ -659,7 +659,7 @@
            https://www.ynet.co.il/articles/0,7340,L-3043583,00.html
     -->
     <country iso="il" allowed="true" />
-    <country iso="ps" allowed="false" />
+    <country iso="ps" allowed="true" />
 
     <!--Enable recording for India:
          No clear definition exists on the matter of call recordings being made by one side.
@@ -672,7 +672,7 @@
     -->
     <country iso="in" allowed="true" />
 
-    <!-- Disable recording for Iceland:
+    <!-- overrode and enabled recording for Iceland:
          According to the Electronic Communications Act, No. 81, recording one's own telephone
          conversations without notifying the other party can make the recording party liable to
          fines or imprisonment of up to six months in the case of serious or repeated violations, as
@@ -684,7 +684,7 @@
          Electronic Communications Act:
            https://www.government.is/Publications/Legislation/Lex/?newsid=86c9a6a9-fab5-11e7-9423-005056bc4d74
     -->
-    <country iso="is" allowed="false" />
+    <country iso="is" allowed="true" />
 
     <!-- Enable recording for Iran:
          Based on Article 25 of the Iranian Constitution, recording one's own calls, as a private
@@ -1036,7 +1036,7 @@
     -->
     <country iso="pl" allowed="true" />
 
-    <!-- Disable recording for Puerto Rico:
+    <!-- overrode and enabled recording for Puerto Rico:
          Title Thirty-three of the Penal Code of 2004, Subtitle 5, Special Provisions, Part I:
          Crimes Against the Person, Chapter 301: Crimes Against Civil Rights, Subchapter II: Crimes
          Against the Right to Privacy, 33 L.P.R.A § 4809 defines the recording of a private personal
@@ -1049,9 +1049,9 @@
          33 L.P.R.A. § 4809. Recording of communications by a participant:
            https://bit.ly/2UqbrRC
     -->
-    <country iso="pr" allowed="false" />
+    <country iso="pr" allowed="true" />
 
-    <!-- Disable recording for Portugal:
+    <!-- overrode and enabled recording for Portugal:
          Privacy is a fundamental right in Portuguese law, as it is defined in Articles 26(1) and 34
          of the Portuguese Constitution. Infringing on said rights constitutes a crime, as defined
          in Articles 192(1), 194(2) and 199(1) of the Portuguese Penal Code. The punishment is
@@ -1091,7 +1091,7 @@
            http://www.dgsi.pt/jtrc.nsf/c3fb530030ea1c61802568d9005cd5bb/c5bb36d9a0470bdd80257b400048f9f2?OpenDocument
            http://www.dgsi.pt/jtrg.nsf/86c25a698e4e7cb7802579ec004d3832/ff947b8a3fda778780257c0000478b5a
     -->
-    <country iso="pt" allowed="false" />
+    <country iso="pt" allowed="true" />
 
     <!-- Enable recording for Romania:
          The Telecommunications Act (506/2004) states that the recording of a conversation by a
@@ -1258,25 +1258,14 @@
     -->
     <country iso="ua" allowed="true" />
 
-    <!-- Disable recording for United States of America, Guam, the Northern Mariana Islands, the
+    <!-- Modified to enable recording for United States of America, Guam, the Northern Mariana Islands, the
                                United States Virgin Islands, Puerto Rico:
-         Currently federal laws state that call recording is legal. On the other hand, each state
-         has its own laws which take priority. Most states allow call recording when one sides
-         agrees, but over 10 require both sides to agree. Since there are no ISO country codes per
-         state, there is no way to differentiate whether the state you are currently in allows call
-         recording or not. Due to this, call recording is set as disabled for the United States of
-         America and some of its territories. These include Guam, the Northern Mariana Islands, the
-         United States Virgin Islands and Puerto Rico. Until a method for properly differentiating
-         between states is created, or a law or precedent emerges which would allow call recording
-         to be legal in all of the USA and its territories, all aforementioned countries and
-         territories should be set as false. Even if such a method is to be found, there is still
-         the question of Native American Reservations, territories that have a cumulative size of
-         over 200 000 square kilometers and might enforce their own set of laws for call recording.
+        I dont care about state rules.
 
          Two-party consent state laws:
            https://recordinglaw.com/party-two-party-consent-states/
     -->
-    <country iso="us,vi,gu" allowed="false" />
+    <country iso="us,vi,gu" allowed="true" />
 
     <!-- Enable recording for Kosovo:
          Article 36 of the Constitution of Kosovo defines the Right to Privacy. Article 202 of the
